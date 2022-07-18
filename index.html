@@ -9,6 +9,18 @@
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <link rel="icon" href="https://yt3.ggpht.com/rBAs5BgVhpjVHgTyY_oMVhkjcTIjQB_x2JoKZZQ-4izcuNeEp3brKzvyHApqe2c1CSdRrdx48TU=s88-c-k-c0x00ffffff-no-rj">
       <title>Ziji</title>
+      
+      <link rel="stylesheet" href="cotuongg/board.css">
+		
+		<script type="text/javascript"> if (!window.console) console = {log: function() {}}; </script>
+        <script src="cotuongg/movegen.js"></script>
+		<script src="cotuongg/gui.js"></script>
+        <script src="cotuongg/evaluate.js"></script>
+        <script src="cotuongg/search.js"></script>
+		<script src="cotuongg/definitions.js"></script>
+		<script src="cotuongg/board.js"></script>
+		<script src="cotuongg/init.js"></script>
+      
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -194,7 +206,39 @@
       </div>
       <div id="contact" class="contact">
          <div class="container">
-            <p style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/t1O7LpOTBfM?autoplay=1" frameborder="0" allowfullscreen></iframe></p>
+            
+            <div id="game">
+            <div id="board">
+                
+            </div>
+			
+            <div id="controls">
+				
+				<div class="player_info">
+					<div class="player_header">
+						<div id="black_clock" class="clock"></div>
+						<div class="player_name">Computer A.I.</div>
+						<div class="player_elo"></div>
+					</div>
+					<div id="black_captured" class="captured">
+					</div>
+				</div>
+				
+				<div id="record">
+                    
+				</div>
+				
+				<div class="player_info">
+					<div id="red_captured" class="captured">
+					</div>
+					<div class="player_header">
+						<div id="red_clock" class="clock"></div>
+						<div class="player_name">Human</div>
+						<div class="player_elo"></div>
+					</div>
+				</div>
+            </div>
+        </div>
             
          </div>
       </div>
