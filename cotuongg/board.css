@@ -45,8 +45,8 @@ nav a:hover {
 #board {
 	background: url("board.png");
 	background-size: 630px 700px;
-	height: 700px;
-	width: 700px;
+	height: 800px;
+	width: 750px;
     float: right;
 }
 
