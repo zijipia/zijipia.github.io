@@ -12,6 +12,8 @@
       <!-- site metas -->
        <link rel="icon" href="https://yt3.ggpht.com/rBAs5BgVhpjVHgTyY_oMVhkjcTIjQB_x2JoKZZQ-4izcuNeEp3brKzvyHApqe2c1CSdRrdx48TU=s88-c-k-c0x00ffffff-no-rj">
       <title>Ziji</title>
+      
+      
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -28,12 +30,22 @@
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      
+      		
+		<link rel="stylesheet" href="board.css">
+		
+		<script type="text/javascript"> if (!window.console) console = {log: function() {}}; </script>
+        <script src="movegen.js"></script>
+		<script src="gui.js"></script>
+        <script src="evaluate.js"></script>
+        <script src="search.js"></script>
+		<script src="definitions.js"></script>
+		<script src="board.js"></script>
+		<script src="init.js"></script>
+
    </head>
    <!-- body -->
-   <body class="main-layout margin_to90">
+   <body><!-- class="main-layout margin_to90">-->
       <!-- loader  -->
       <div class="loader_bg">
          <div class="loader"><img src="images/loading.gif" alt="#" /></div>
@@ -95,30 +107,38 @@
       <!-- end header -->
      
       <!-- clients -->
-      <div class="clients">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6 offset-md-3">
-                  <div class="titlepage">
-                     <h2>What is Say clients</h2>
-                     <span></span>
-                  </div>
-               </div>
+        <div id="game" class="shadow">
+            <div id="board">
+                
             </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="clients_box">
-                     <p>hm... hiện tại thì chưa ai nói gì về web của mình :3.</p>
-                  </div>
-                  <div class="jonu">
-                     <img src="images/cross_img.png" alt="#"/>
-                     <h3>Ziji</h3>
-                     <a class="read_more" href="contact.html">Make a question</a>
-                  </div>
-               </div>
+			
+            <div id="controls">
+				
+				<div class="player_info">
+					<div class="player_header">
+						<div id="black_clock" class="clock"></div>
+						<div class="player_name">Computer A.I.</div>
+						<div class="player_elo"></div>
+					</div>
+					<div id="black_captured" class="captured">
+					</div>
+				</div>
+				
+				<div id="record">
+                    
+				</div>
+				
+				<div class="player_info">
+					<div id="red_captured" class="captured">
+					</div>
+					<div class="player_header">
+						<div id="red_clock" class="clock"></div>
+						<div class="player_name">Human</div>
+						<div class="player_elo"></div>
+					</div>
+				</div>
             </div>
-         </div>
-      </div>
+        </div>
       <!-- end clients -->
      
       <!--  footer -->
